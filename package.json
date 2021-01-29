@@ -1,0 +1,13 @@
+{
+  "name": "softwaresmitty",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "reactstrap": "^8.9.0"
+  }
+}
