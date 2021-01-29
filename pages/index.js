@@ -1,12 +1,14 @@
 import react from "react"
-
+import Feature from '@/components/feature'
+import { Container } from "reactstrap"
 
 
 const Index = () => {
     return(
-        <>
-        <h1>Hello Welcome to Software Smitty world</h1>
-        </>
+        <Container>
+        <Feature/>
+        </Container>
+       
     )
 }
 
