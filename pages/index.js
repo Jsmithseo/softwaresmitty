@@ -1,18 +1,16 @@
-import react from "react"
-import Feature from '@/components/feature'
-import { Container } from "reactstrap"
-
+import React from "react";
+import Feature from "@/components/feature";
+import { Container } from "reactstrap";
+import BaseLayout from "@/components/layouts/BaseLayout";
 
 const Index = () => {
-    return(
-        <Container>
-        <Feature/>
-        </Container>
-       
-    )
-}
+  return (
+    <BaseLayout className="cover">
+      <Container>
+        <Feature />
+      </Container>
+    </BaseLayout>
+  );
+};
 
-
-
-
-export default Index
+export default Index;
