@@ -28,17 +28,8 @@ const BsNavBrand = () => (
   </Link>
 );
 
-const LoginLink = () => (
-  <a className="nav-link port-navbar-link" href="/api/v1/login">
-    Login | Sign up
-  </a>
-);
 
-const LogoutLink = () => (
-  <a className="nav-link port-navbar-link" href="/api/v1/logout">
-    Logout
-  </a>
-);
+
 
 const AdminMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -133,25 +124,7 @@ const Header = ({ user, loading, className }) => {
               <BsNavLink href="/onlyadminssr" title="AdminSSR"/>
             </NavItem> */}
             </Nav>
-            <Nav navbar>
-              {!loading && (
-                <>
-                  {user && (
-                    <>
-                      {isAuthorized(user, "admin") && <AdminMenu />}
-                      <NavItem className="port-navbar-item">
-                        <LogoutLink />
-                      </NavItem>
-                    </>
-                  )}
-                  {!user && (
-                    <NavItem className="port-navbar-item">
-                      <LoginLink />
-                    </NavItem>
-                  )}
-                </>
-              )}
-            </Nav>
+
           </Collapse>
         </Navbar>
       )}
